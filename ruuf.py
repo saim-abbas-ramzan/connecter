@@ -1,7 +1,5 @@
 from tkinter import *
 from tkinter import messagebox, Toplevel
-import PIL
-from PIL import Image,ImageFilter
 import ast
 
 def signin():
