@@ -78,13 +78,13 @@ def signup_screen():
     heading = Label(frame, text='Sign Up', fg="#57a1f8", bg='white', font=('Microsoft Yahei UI Light', 23, 'bold'))
     heading.place(x=100, y=5)
 
-    user = Entry(frame, width=25, fg='black', border=0, bg='white', font=('Microsoft Yahei UI Light', 11))
+    user = Entry(frame, width=25, fg='brown', border=0, bg='white', font=('Microsoft Yahei UI Light', 11))
     user.place(x=30, y=80)
     user.insert(0, 'username')
     user.bind("<FocusIn>", lambda e: user.delete(0, 'end'))
     user.bind("<FocusOut>", lambda e: user.insert(0, 'username') if user.get() == '' else None)
 
-    Frame(frame, width=295, height=2, bg='black').place(x=25, y=107)
+    Frame(frame, width=295, height=2, bg='brown').place(x=25, y=107)
 
     code = Entry(frame, width=25, fg='pink', border=0, bg='white', font=('Microsoft Yahei UI Light', 11))
     code.place(x=30, y=150)
@@ -92,7 +92,7 @@ def signup_screen():
     code.bind("<FocusIn>", lambda e: code.delete(0, 'end'))
     code.bind("<FocusOut>", lambda e: code.insert(0, 'password') if code.get() == '' else None)
 
-    Frame(frame, width=295, height=2, bg='black').place(x=25, y=177)
+    Frame(frame, width=295, height=2, bg='brown').place(x=25, y=177)
 
     confirm_code = Entry(frame, width=25, fg='black', border=0, bg='white', font=('Microsoft Yahei UI Light', 11))
     confirm_code.place(x=30, y=220)
