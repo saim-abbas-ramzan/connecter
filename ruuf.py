@@ -86,7 +86,7 @@ def signup_screen():
 
     Frame(frame, width=295, height=2, bg='black').place(x=25, y=107)
 
-    code = Entry(frame, width=25, fg='black', border=0, bg='white', font=('Microsoft Yahei UI Light', 11))
+    code = Entry(frame, width=25, fg='pink', border=0, bg='white', font=('Microsoft Yahei UI Light', 11))
     code.place(x=30, y=150)
     code.insert(0, 'password')
     code.bind("<FocusIn>", lambda e: code.delete(0, 'end'))
@@ -104,7 +104,7 @@ def signup_screen():
     Frame(frame, width=295, height=2, bg='black').place(x=25, y=247)
 
     Button(frame, width=39, pady=7, text='Sign Up', bg='#57a1f8', fg='white', border=0, command=signup).place(x=35, y=280)
-    label = Label(frame, text='I have an account', fg='black', bg='white', font=('Microsoft Yahei UI Light', 9))
+    label = Label(frame, text='I have an account', fg='pink', bg='white', font=('Microsoft Yahei UI Light', 9))
     label.place(x=90, y=340)
 
     signin = Button(frame, width=6, text='Sign in', border=0, bg='white', cursor='hand2', fg='#57a1f8', command=sign)
